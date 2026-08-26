@@ -11,6 +11,8 @@ Antes: `initializeApp(firebaseConfig)` com `firebaseConfig.apiKey === undefined`
 
 Depois: validei a presença de `NEXT_PUBLIC_FIREBASE_API_KEY` e instruí a criação de `.env.local` (veja `.env.example`).
 
+**Status:** Corrigido (mensagem e validação adicionadas) — commit fb1153d
+
 ### Screenshot ou resultado
 ![BUG01 - Antes](/screenshots/bug01-before.png)
 ![BUG01 - Depois](/screenshots/bug01-after.png)
@@ -29,6 +31,8 @@ A condição que verifica o token estava invertida: `if (token) redirect('/login
 Antes: `if (token) return NextResponse.redirect(new URL('/login', request.url));`
 
 Depois: `if (!token) return NextResponse.redirect(new URL('/login', request.url));`
+
+**Status:** Corrigido — commit fb1153d
 
 ### Screenshot ou resultado
 ![BUG02 - Antes](/screenshots/bug02-before.png)
@@ -49,6 +53,8 @@ Antes: `if (senha !== nome) { setErro(...) }`
 
 Depois: `if (senha !== confirmarSenha) { setErro(...) }`
 
+**Status:** Corrigido — commit fb1153d
+
 ### Screenshot ou resultado
 ![BUG03 - Antes](/screenshots/bug03-before.png)
 ![BUG03 - Depois](/screenshots/bug03-after.png)
@@ -67,6 +73,8 @@ A query usada em `listarPersonagens` não aplicava `where('userId', '==', uid')`
 Antes: `const q = query(collection(db, 'personagens'))`
 
 Depois: `const q = query(collection(db, 'personagens'), where('userId', '==', uid))` (importar `where`).
+
+**Status:** Corrigido — commit fb1153d
 
 ### Screenshot ou resultado
 ![BUG04 - Antes](/screenshots/bug04-before.png)
@@ -87,6 +95,8 @@ Antes: `addDoc(collection(db, 'personagem'), {...})`
 
 Depois: `addDoc(collection(db, 'personagens'), {...})`
 
+**Status:** Corrigido — commit fb1153d
+
 ### Screenshot ou resultado
 ![BUG05 - Antes](/screenshots/bug05-before.png)
 ![BUG05 - Depois](/screenshots/bug05-after.png)
@@ -105,6 +115,8 @@ A função `equiparItem` usava `setDoc`, que substitui todo o documento, em vez 
 Antes: `await setDoc(doc(db, 'personagens', personagemId), { [slot]: itemId })`
 
 Depois: `await updateDoc(doc(db, 'personagens', personagemId), { [slot]: itemId })`
+
+**Status:** Corrigido — commit fb1153d
 
 ### Screenshot ou resultado
 ![BUG06 - Antes](/screenshots/bug06-before.png)
@@ -125,6 +137,8 @@ Antes: `await deleteDoc(doc(db, 'personagens', String(indice)))`
 
 Depois: `await deleteDoc(doc(db, 'personagens', personagem.id))`
 
+**Status:** Corrigido — commit fb1153d
+
 ### Screenshot ou resultado
 ![BUG07 - Antes](/screenshots/bug07-before.png)
 ![BUG07 - Depois](/screenshots/bug07-after.png)
@@ -143,6 +157,8 @@ O bloco `catch` estava vazio, então erros do Firebase eram silenciosamente igno
 Antes: `catch { /* vazio */ }`
 
 Depois: `catch { setErro('E-mail ou senha inválidos.') }`
+
+**Status:** Corrigido — commit fb1153d
 
 ### Screenshot ou resultado
 ![BUG08 - Antes](/screenshots/bug08-before.png)
