@@ -140,8 +140,8 @@ Depois: `await deleteDoc(doc(db, 'personagens', personagem.id))`
 **Status:** Corrigido — commit fb1153d
 
 ### Screenshot ou resultado
-![BUG07 - Antes](public/screenshots/bug07-before.png)
-![BUG07 - Depois](public/screenshots/bug07-after.png)
+![BUG07 - Antes] (public/screenshots/bug07-before.png)
+![BUG07 - Depois] (public/screenshots/bug07-after.png)
 
 ---
 
