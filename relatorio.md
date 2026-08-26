@@ -14,8 +14,8 @@ Depois: validei a presença de `NEXT_PUBLIC_FIREBASE_API_KEY` e instruí a cria�
 **Status:** Corrigido (mensagem e validação adicionadas) — commit fb1153d
 
 ### Screenshot ou resultado
-![BUG01 - Antes](/screenshots/bug01-before.png)
-![BUG01 - Depois](/screenshots/bug01-after.png)
+![BUG01 - Antes](public/screenshots/bug01-before.png)
+![BUG01 - Depois](public/screenshots/bug01-after.png)
 
 ---
 
@@ -35,8 +35,8 @@ Depois: `if (!token) return NextResponse.redirect(new URL('/login', request.url)
 **Status:** Corrigido — commit fb1153d
 
 ### Screenshot ou resultado
-![BUG02 - Antes](/screenshots/bug02-before.png)
-![BUG02 - Depois](/screenshots/bug02-after.png)
+![BUG02 - Antes](public/screenshots/bug02-before.png)
+![BUG02 - Depois](public/screenshots/bug02-after.png)
 
 ---
 
@@ -56,8 +56,8 @@ Depois: `if (senha !== confirmarSenha) { setErro(...) }`
 **Status:** Corrigido — commit fb1153d
 
 ### Screenshot ou resultado
-![BUG03 - Antes](/screenshots/bug03-before.png)
-![BUG03 - Depois](/screenshots/bug03-after.png)
+![BUG03 - Antes](public/screenshots/bug03-before.png)
+![BUG03 - Depois](public/screenshots/bug03-after.png)
 
 ---
 
@@ -77,8 +77,8 @@ Depois: `const q = query(collection(db, 'personagens'), where('userId', '==', ui
 **Status:** Corrigido — commit fb1153d
 
 ### Screenshot ou resultado
-![BUG04 - Antes](/screenshots/bug04-before.png)
-![BUG04 - Depois](/screenshots/bug04-after.png)
+![BUG04 - Antes](public/screenshots/bug04-before.png)
+![BUG04 - Depois](public/screenshots/bug04-after.png)
 
 ---
 
@@ -98,8 +98,8 @@ Depois: `addDoc(collection(db, 'personagens'), {...})`
 **Status:** Corrigido — commit fb1153d
 
 ### Screenshot ou resultado
-![BUG05 - Antes](/screenshots/bug05-before.png)
-![BUG05 - Depois](/screenshots/bug05-after.png)
+![BUG05 - Antes](public/screenshots/bug05-before.png)
+![BUG05 - Depois](public/screenshots/bug05-after.png)
 
 ---
 
@@ -119,8 +119,8 @@ Depois: `await updateDoc(doc(db, 'personagens', personagemId), { [slot]: itemId 
 **Status:** Corrigido — commit fb1153d
 
 ### Screenshot ou resultado
-![BUG06 - Antes](/screenshots/bug06-before.png)
-![BUG06 - Depois](/screenshots/bug06-after.png)
+![BUG06 - Antes](public/screenshots/bug06-before.png)
+![BUG06 - Depois](public/screenshots/bug06-after.png)
 
 ---
 
@@ -140,8 +140,8 @@ Depois: `await deleteDoc(doc(db, 'personagens', personagem.id))`
 **Status:** Corrigido — commit fb1153d
 
 ### Screenshot ou resultado
-![BUG07 - Antes](/screenshots/bug07-before.png)
-![BUG07 - Depois](/screenshots/bug07-after.png)
+![BUG07 - Antes](public/screenshots/bug07-before.png)
+![BUG07 - Depois](public/screenshots/bug07-after.png)
 
 ---
 
@@ -161,5 +161,5 @@ Depois: `catch { setErro('E-mail ou senha inválidos.') }`
 **Status:** Corrigido — commit fb1153d
 
 ### Screenshot ou resultado
-![BUG08 - Antes](/screenshots/bug08-before.png)
-![BUG08 - Depois](/screenshots/bug08-after.png)
+![BUG08 - Antes](public/screenshots/bug08-before.png)
+![BUG08 - Depois](public/screenshots/bug08-after.png)
